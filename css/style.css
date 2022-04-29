@@ -18,3 +18,25 @@ header{
 header h1{
     font-size: 50px;
 }
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+main p{
+    width: calc(33.3% - 20px);
+    color: black;
+    border: 1px dotted green;
+    padding: 5px;
+    text-align: justify;
+}
+main h2{
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+
