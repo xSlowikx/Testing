@@ -34,7 +34,7 @@ main p{
 main h2{
     text-align: center;
     width: 100%;
-    color: black;
+    color: red;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
