@@ -10,12 +10,12 @@ main.fondo_pelicula{
     margin-top: 1%;
     margin-bottom: 1%;
     box-shadow: rgb(92, 91, 91) 10px 10px 25px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding-bottom: 1%;
     border-radius: 1%;
     
 }
-main.fondo_pelicula .imagen{
+/* main.fondo_pelicula .imagen{
     background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_uncharted.jpg);
     width: 100%;
     height: 500px;
@@ -23,9 +23,9 @@ main.fondo_pelicula .imagen{
     background-size: cover;
     background-position: top center;
     position: relative;
-}
+} */
 main.fondo_pelicula .imagen button{
-    box-sizing: border-box;
+    box-sizing: content-box;
     position: absolute;
     bottom: 20%;
     left: 10%;
@@ -60,7 +60,7 @@ section.descripcion,.similares{
     margin: auto;
 }
 section.descripcion{
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-top: 15px;
     /* background-color: darkgrey; */
     display: flex;
@@ -69,28 +69,31 @@ section.descripcion{
     padding: 10px;
 }
 section.descripcion article{
-    width: calc(50% - 15px);
+    width: calc(50% - 30px);
     margin-bottom: 5px;
 }
 section.descripcion article.video{
     /* background-color: green; */
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding: 10px;
     display: flex;
     justify-content: center;
 }
 section.descripcion article.sinopsis{
     /* background-color: red; */
-    box-sizing: border-box;
+    box-sizing: content-box;
     text-align: justify;
     padding: 1%;
 }
 section.descripcion article.sinopsis h3{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    padding: 1%;
+    box-shadow: -4px 4px 5px red;
 }
 section.descripcion article.info{
     /* background-color: blue; */
-    box-sizing: border-box;
+    box-sizing: content-box;
     text-align: justify;
     padding: 1%;
     display: flex;
@@ -98,21 +101,27 @@ section.descripcion article.info{
     justify-content: flex-end;
 }
 section.descripcion article.info h4{
-    box-sizing: border-box;
+    box-sizing: content-box;
     width: 25%;
-    padding: 1%;
     text-align: right;
 }
 section.descripcion article.info h5{
     width: 100%;
-    padding: 1%;
+}
+section.descripcion article.info h5 a{
+    text-decoration: none;
+    color: white;
+}
+section.descripcion article.info h5 a:hover{
+    color: red;
 }
 section.similares{
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-top: 1%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     /* background-color: bisque; */
 }
 section.similares h2{
@@ -120,18 +129,132 @@ section.similares h2{
     padding: 15px 0px 10px 40px;
     margin-bottom: 1%;
 }
-section.similares article{
-    box-sizing: border-box;
-    width: calc(33.3% - 10px);
+section.similares a{
+    box-sizing: content-box;
+    width: calc(33.3% - 50px);
     text-align: center;
     font-weight: bold;
     margin-bottom: 2%;
+    object-fit: cover;
+    text-decoration: none;
+    color: white;
 }
-section.similares article img{
+section.similares a article img{
     border-radius: 5%;
+    width: 100%;
 }
-section.similares article:hover{
+section.similares a article:hover{
     color:red;
     cursor: pointer;
 }
 /* Peliculas */
+/* Uncharted */
+main.fondo_pelicula .uncharted{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_uncharted.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Uncharted */
+/* Carnage */
+main.fondo_pelicula .carnage{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/carnage_portada.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Carnage */
+/* Free Guy */
+main.fondo_pelicula .free_guy{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/free_guy_portada_16_11zon.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Free Guy */
+/* No Way Home */
+main.fondo_pelicula .no_way_home{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_nowayhome.jpeg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* No Way Home */
+/* Guerra del Mañana */
+main.fondo_pelicula .guerra_manana{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_manana.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Guerra del Mañana */
+/* Sonic 2 */
+main.fondo_pelicula .sonic2{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_sonic2.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Sonic 2 */
+/* Pearl Harbor */
+main.fondo_pelicula .pearl_harbor{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_harbor.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Pearl Harbor */
+/* Batman */
+main.fondo_pelicula .dark_knight{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_darknight.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Batman */
+/* Troya */
+main.fondo_pelicula .troya{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_troya.jpeg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Troya */
+/* Transformers */
+main.fondo_pelicula .transformers{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_transformers.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Transformers */

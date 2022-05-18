@@ -60,11 +60,6 @@ header.index nav ul a.alejado li{
 }
 /* Header */
 /* Index */
-h1.index{
-    background-color: aquamarine;
-    font-size: 100px;
-    text-align: center;
-}
 main.fondo{
     background-color: rgb(0, 0, 0);
     padding: 1%;
@@ -74,15 +69,53 @@ section.filtros,.contenidos{
     margin: auto;
 }
 .filtros{
-    background-color: beige;
-    text-align: center;
+    box-sizing: content-box;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
 }
-.filtros h3{
-    width: calc(50% - 15px);
+.filtros article {
+    width: calc(50% - 60px);
+}
+.filtros .filtro_genero{
+    font-size: 20px;
+    box-sizing: content-box;
+    text-align: left;
+    margin: 1%;
+    padding: 1%;
+}
+.filtros .filtro_genero select{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5%;
+}
+.filtros .filtro_busqueda{
+    font-size: 20px;
+    box-sizing: content-box;
+    text-align: right;
+    margin: 1%;
+    padding: 1%;
+    vertical-align: baseline;
+}
+.filtros .filtro_busqueda input,label,i{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5%;
+    margin: 3px auto;
+}
+.filtros .filtro_busqueda input{
+    color: black;
 }
 .contenidos{
-    box-sizing: border-box;
+    box-sizing: content-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -90,14 +123,12 @@ section.filtros,.contenidos{
 }
 .contenidos a{
     object-fit: cover;
-    box-sizing: border-box;
-    width: calc(15% - 20px);
+    box-sizing: content-box;
+    width: calc(15% - 5px);
     text-align: center;
     margin: 0;
     text-decoration: none;
-}
-.contenidos a:visited{
-    color:white;
+    color: white;
 }
 .contenidos a:hover{
     color: red;
