@@ -27,7 +27,7 @@ main.fondo_serie .imagen button{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: baseline;
     font-size: 25px;
     background-color: red;
     color: white;
@@ -35,10 +35,12 @@ main.fondo_serie .imagen button{
     padding: 1%;
 }
 main.fondo_serie .imagen button i{
-    width: 30%;
+    margin: 6% 1%;
+    width: calc(10% - 0px);
 }
 main.fondo_serie .imagen button p{
-    width: 70%;
+    margin: 5% 1%;
+    width: calc(50% - 0px);
     text-align: left;
     font-weight: bold;
 }
