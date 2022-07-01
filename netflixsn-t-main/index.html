@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NETFLIXSN'T</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="index">
+    <header class="index">
+         <nav>
+            <a href="index.html" class="logo_principal"><img src="img/logo_principal.png" alt="logo"></a>
+            <a href="" class="burguer_icon"><i class="fa-solid fa-bars"></i></a>
+            <ul>
+                <a href="index.html" class="links_nav home"><li>Home</li></a>
+                <a href="filter_series.html" class="links_nav series"><li>Series</li></a>
+                <a href="filter_peliculas.html" class="links_nav peliculas"><li>Peliculas</li> </a>
+                <a href="perfil.html" class="links_nav alejado"><li><i class="fa-solid fa-user"></i></li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class="fondo">
+        <section class="filtros">
+            <article class="filtro_genero">
+                <label for="genero">Genero</label>
+                <select name="genero" id="genero">
+                    <option value="drama">Drama</option>
+                    <option value="comedia">Comedia</option>
+                    <option value="accion">Accion</option>
+                    <option value="historia">Historia</option>
+                    <option value="aventuras">Aventuras</option>
+                </select>
+            </article>
+            <article class="filtro_busqueda">
+                <label for="buscador">Buscar...</label>
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </article>
+        </section>
+        <section class="contenidos">
+            <h2>Agregadas recientementes</h2>
+            <a href="carnage.html"><article><img src="img/carnage.jpg" alt="carnage"><p>Carnage</p></article></a>
+            <a href="free_guy.html"> <article><img src="img/free_guy.jpg" alt="free_guy"><p>Free Guy</p></article> </a>
+            <a href="halo.html"><article><img src="img/halo.jpg" alt="halo"><p>Halo</p></article></a>
+            <!-- <a href="valhalla.html"><article><img src="img/vikings_valhalla.jpg" alt="vikings_valhalla"><p>Vikings: Valhalla</p></article></a> -->
+            <!-- <a href="no_way_home.html"> <article><img src="img/no_way_home.jpg" alt="no_way_home"><p>Spider-Man: No Way Home</p></article></a> -->
+            <a href="peaky_blinders.html"><article><img src="img/peaky_blinders.jpg" alt="peaky_blinders"><p>Peaky Blinders</p></article></a>
+            <a href="uncharted.html"><article><img src="img/uncharted.jpg" alt="uncharted"><p>Uncharted</p></article></a>
+        </section>
+        <section class="contenidos">
+            <h2>Lo mas visto</h2>
+            <!-- <a href=""><article><img src="img/dune.jpg" alt="dune"><p>Dune</p></article>
+            </a> -->
+            <a href="whatif.html"><article><img src="img/whatif.jpg" alt="whatif"><p>What If...?</p></article>
+            </a>
+            <!-- <a href=""><article><img src="img/godzilla_vs_kong.jpg" alt="godzilla_vs_kong"><p>Godzilla vs Kong</p></article>
+            </a> -->
+            <a href="guerra_manana.html"><article><img src="img/guerra_mañana.jpg" alt="guerra_mañana"><p>La Guerra del Mañana</p></article>
+            </a>
+            <a href="witcher.html"><article><img src="img/the_witcher.jpg" alt="the_witcher"><p>The Witcher</p></article>
+            </a>
+            <a href="sonic2.html"><article><img src="img/sonic2.jpg" alt="sonic2"><p>Sonic 2</p></article>
+            </a>
+            <a href="pearl_harbor.html"><article><img src="img/pearl_harbor.jpg" alt="pearl_harbor"><p>Pearl Harbor</p></article>
+            </a>
+        </section>
+        <section class="contenidos">
+            <h2>Nunca pasan de moda</h2>
+            <!-- <a href=""><article><img src="img/batman_begins.jpg" alt="batman_begins"><p>Batman: Inicia</p></article>
+            </a> -->
+            <a href="dark_knight.html"><article><img src="img/batman_dark_night.jpg" alt="batman_dark_night"><p>Batman: El Caballero de la Noche</p></article>
+            </a>
+            <a href="got.html"><article><img src="img/game_of_thrones.jpg" alt="game_of_thrones"><p>Game of Thrones</p></article>
+            </a>
+            <a href="troya.html"><article><img src="img/troya.jpg" alt="troya"><p>Troya</p></article>
+            </a>
+           <!--  <a href=""><article><img src="img/star_wars_v.jpg" alt="star_wars_v"><p>Star Wars V: El Imperio Contraataca</p></article>
+            </a> -->
+            <a href="twd.html"><article><img src="img/twd.jpg" alt="twd"><p>The Walking Dead</p></article>
+            </a>
+            <a href="transformers.html"><article><img src="img/transformers.jpg" alt="transformers"><p>Transformers</p></article>
+            </a>
+        </section>
+    </main>
+    <aside>
+
+    </aside>
+    <footer class="footer_index">
+            <p class="numero_servicio">¿Preguntas? Llama al 0800 345 1593</p>
+             <ul class="informacion_footer">
+                <li class="li_login" ><a href="" class="li_login" >Preguntas frecuentes</a></li> 
+                <li class="li_login" ><a href="" class="li_login" >Centro de ayuda</a></li>
+                <li class="li_login" ><a href="" class="li_login" >Términos de uso</a></li>
+                <li class="li_login" ><a href="" class="li_login" >Privacidad</a></li>
+                <li class="li_login" ><a href="" class="li_login" >Preferencias de cookies</a></li>
+                <li class="li_login" ><a href="" class="li_login" >Información corporativa</a></li>
+            </ul> 
+    </footer>
+</body>
+</html>
