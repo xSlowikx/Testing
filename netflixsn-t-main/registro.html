@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NETFLIXSN'T</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="background_registro">
+    <header class="logo_registro">
+            <img src="img/logo_principal.png" alt="Logo">
+    </header>
+    <main class="fondo_registro">
+        <section class="primer_registro">
+            <span>
+                <h2>Registro de Nuevo Usuario</h2>
+            </span>
+            <article class="columna_datos">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre">
+                <br>
+                <label for="apellido">Apellido</label>
+                <input id="apellido" type="text" name="apellido" placeholder="Ingrese su apellido">
+                <br>
+                <label for="mail">E-mail</label>
+                <input id="mail" type="email" name="mail" placeholder="Ingrese su email" required="">
+                <br>
+                <label for="usuario">Usuario</label>
+                <input id="usuario" type="text" name="usuario" placeholder="Ingrese su nombre de usuario">
+                <br>
+                <label for="pass0">Contraseña</label>
+                <input id="pass0" type="password" name="pass0" placeholder="Ingrese su contraseña">
+                <br>
+                <label for="pass1">Repetir Contraseña</label>
+                <input id="pass1" type="password" name="pass1" placeholder="Repita su contraseña">
+            </article>
+            <article class="columna_metodo">
+                <p class="alinea_columna">Metodo de pago:</p>
+                    <input id="tarjeta" type="radio" name="metodo_pago" value="tarjeta">
+                        Tarjeta de crédito <br>
+                <label for="num">
+                    <input id="num" type="tel" name="num" placeholder="Número de tarjeta" pattern="[0-9]{16,}" required="">
+                </label>
+                <label for="cod">
+                    <input id="cod" type="tel" name="cod" placeholder="XXX" pattern="[0-9]{3,}" required="" class="tresdigitos">
+                </label>
+                <br>
+                <input id="cupon" type="radio" name="metodo_pago" value="cupon">
+                    Cupón de pago <br>
+                <input id="pagofacil" type="radio" name="cupon_pago" value="pagofacil">
+                    Pago Facil <br>
+                <input id="rapipago" type="radio" name="cupon_pago" value="rapipago">
+                    RapiPago
+                <br>
+                <input id="transferencia" type="radio" name="metodo_pago" value="transferencia">
+                    Transferencia bancaria <br> <p class="columna2">CBU: 0123456789</p>
+            </article>
+        </section>
+        <section class="botones">
+            <a href="login.html" >
+                <input type="submit" value="Guardar cambios" class="verde">
+            </a>
+            <a href="login.html">
+                <input type="submit" value="Cancelar subscripcion" class="rojo">
+            </a>
+        </section>
+    </main>
+    <footer class="footer_index">
+        <p class="numero_servicio">¿Preguntas? Llama al 0800 345 1593</p>
+         <ul class="informacion_footer">
+            <li class="li_login" ><a href="" class="li_login" >Preguntas frecuentes</a></li> 
+            <li class="li_login" ><a href="" class="li_login" >Centro de ayuda</a></li>
+            <li class="li_login" ><a href="" class="li_login" >Términos de uso</a></li>
+            <li class="li_login" ><a href="" class="li_login" >Privacidad</a></li>
+            <li class="li_login" ><a href="" class="li_login" >Preferencias de cookies</a></li>
+            <li class="li_login" ><a href="" class="li_login" >Información corporativa</a></li>
+        </ul> 
+</footer>
+</body>
+</html>

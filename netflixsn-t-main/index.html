@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
     <title>NETFLIXSN'T</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/scripts.js"></script>
 </head>
 <body class="index">
     <header class="index">
          <nav>
-            <img src="img/logo_principal.png" alt="Logo">
+            <a href="index.html" class="logo_principal"><img src="img/logo_principal.png" alt="logo"></a>
+            <a href="" class="burguer_icon"><i class="fa-solid fa-bars"></i></a>
             <ul>
-                <a href="index.html" class="links_nav"><li>Home</li></a>
-                <a href="filter_series.html" class="links_nav"><li>Series</li></a>
-                <a href="filter_peliculas.html" class="links_nav"><li>Peliculas</li> </a>
+                <a href="index.html" class="links_nav home"><li>Home</li></a>
+                <a href="filter_series.html" class="links_nav series"><li>Series</li></a>
+                <a href="filter_peliculas.html" class="links_nav peliculas"><li>Peliculas</li> </a>
                 <a href="perfil.html" class="links_nav alejado"><li><i class="fa-solid fa-user"></i></li></a>
             </ul>
         </nav>
@@ -25,6 +28,7 @@
             <article class="filtro_genero">
                 <label for="genero">Genero</label>
                 <select name="genero" id="genero">
+                    <option value="0">Seleccione una opción</option>
                     <option value="drama">Drama</option>
                     <option value="comedia">Comedia</option>
                     <option value="accion">Accion</option>
@@ -34,13 +38,14 @@
             </article>
             <article class="filtro_busqueda">
                 <label for="buscador">Buscar...</label>
-                <input type="text" name="buscador" id="buscador">
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </article>
         </section>
         <section class="contenidos">
+            <h2 class="resultados">Resultados</h2>
             <h2>Agregadas recientementes</h2>
-            <a href="carnage.html"><article><img src="img/carnage.jpg" alt="carnage"><p>Carnage</p></article></a>
+            <a href="carnage.html" id="Carnage"><article><img src="img/carnage.jpg" alt="carnage"><p>Carnage</p></article></a>
             <a href="free_guy.html"> <article><img src="img/free_guy.jpg" alt="free_guy"><p>Free Guy</p></article> </a>
             <a href="halo.html"><article><img src="img/halo.jpg" alt="halo"><p>Halo</p></article></a>
             <!-- <a href="valhalla.html"><article><img src="img/vikings_valhalla.jpg" alt="vikings_valhalla"><p>Vikings: Valhalla</p></article></a> -->
@@ -86,8 +91,16 @@
     <aside>
 
     </aside>
-    <footer>
-
+    <footer class="footer_index">
+            <p class="numero_servicio">¿Preguntas? Llama al 0800 345 1593</p>
+             <ul class="informacion_footer">
+                <li class="li_login" ><a href="" class="li_login" >Preguntas frecuentes</a></li> 
+                <li class="li_login" ><a href="" class="li_login" >Centro de ayuda</a></li>
+                <li class="li_login" ><a href="" class="li_login" >Términos de uso</a></li>
+                <li class="li_login" ><a href="" class="li_login" >Privacidad</a></li>
+                <li class="li_login" ><a href="" class="li_login" >Preferencias de cookies</a></li>
+                <li class="li_login" ><a href="" class="li_login" >Información corporativa</a></li>
+            </ul> 
     </footer>
 </body>
 </html>
