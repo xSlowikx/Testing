@@ -197,6 +197,7 @@ section.contenidos a {
   max-width: 100%;
   border-radius: 5%;
   margin-bottom: 0.5em;
+  max-height: 300px;
 }
 section.contenidos .home{
     display: none;

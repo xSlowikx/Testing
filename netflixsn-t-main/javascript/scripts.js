@@ -10,23 +10,45 @@ $(document).ready(function(){
         $("a").filter("#"+$(this).val()).css('display','inline-block');
     });
     
-    //FILTRO SERIES - NAV INDEX
+    //FILTRO SERIES - NAV INDEX -- FUNCIONANDO
     $("a.series").click(function(){
         console.log("Entre");
-        if($("section.contenidos a:contains(.serie)")){
             $("section.contenidos a.serie").css('display','inline-block');
             $("section.contenidos a.pelicula").css('display','none');
-        } else {
-        }
     });
 
-    //FILTRO PELICULAS - NAV INDEX
-    $("a.peliculas").click(function(){
+    //FILTRO PELICULAS - NAV INDEX -- FUNCIONANDO
+    $("a.peliculas #genero").click(function(){
         console.log("Entre");
-        if($("section.contenidos a:contains(.pelicula)")){
             $("section.contenidos a.pelicula").css('display','inline-block');
             $("section.contenidos a.serie").css('display','none');
-        } else {
+    });
+
+    //FILTRO PELICULAS & SERIES POR GENERO -- FUNCIONANDO, INTENTO DE FILTRAR POR CATEGORIA (PELICULA O SERIE) AL MISMO TIEMPO SIN EXITO.
+    $("#genero").change(function(){
+        $("a.pelicula,a.serie").hide();
+        switch($(this).val()){
+            case "0":
+                $("a.pelicula,a.serie").show();
+                $("a.home").hide();
+                break;
+            case "1":
+                $("a.drama").show();
+                break
+            case "2":
+                $("a.comedia").show();
+                break;
+            case "3":
+                $("a.accion").show();
+                break;
+            case "4":
+                $("a.historia").show();
+                break;
+            case "5":
+                $("a.aventura").show();
+                break;
+            default:
+                break;
         }
     });
 });
