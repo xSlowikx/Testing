@@ -198,6 +198,9 @@ section.contenidos a {
   border-radius: 5%;
   margin-bottom: 0.5em;
 }
+section.contenidos .home{
+    display: none;
+}
 .footer_index {
   background-color: darkgray;
   max-width: 100%;
