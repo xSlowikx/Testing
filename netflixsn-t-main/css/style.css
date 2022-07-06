@@ -150,7 +150,103 @@ section.filtros .filtro_genero{
 .filtros .filtro_busqueda input{
     color: black;
 }
+<<<<<<< HEAD
 section.contenidos{
+=======
+section.contenidos {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+}
+section.contenidos h2.resultados {
+  display: none;
+}
+section.contenidos h2 {
+  word-wrap: break-word;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 3em;
+  width: 100%;
+  color: white;
+  padding: 1em 1em 1.5em 1em;
+  text-shadow: 0.05em 0.05em rgb(102, 100, 100);
+}
+section.contenidos a {
+  /* object-fit: cover; */
+  display: inline-block;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  width: calc(50% - 1em);
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+/* .contenidos a:hover{
+    color: red;
+} */
+.contenidos a p {
+  font-size: 1.5em;
+  font-weight: bold;
+  word-wrap: break-word;
+  width: fit-content;
+  margin: auto;
+}
+.contenidos a img {
+  max-width: 100%;
+  border-radius: 5%;
+  margin-bottom: 0.5em;
+  max-height: 300px;
+}
+section.contenidos .home{
+    display: none;
+}
+.footer_index {
+  background-color: darkgray;
+  max-width: 100%;
+  font-size: 15px;
+}
+ul.informacion_footer {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+}
+ul.informacion_footer li {
+  text-decoration: none;
+  text-align: center;
+  color: #737373;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0.5em;
+  width: calc(33.3% - 1em);
+}
+ul.informacion_footer li a {
+  text-decoration: none;
+  color: #737373;
+}
+ul.informacion_footer li a:hover {
+  color: black;
+}
+p.numero_servicio {
+  font-size: 25px;
+  padding-top: 0.5em;
+  margin: auto;
+  width: 50%;
+  color: #737373;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+p.numero_servicio:hover {
+  color: black;
+  cursor: pointer;
+}
+@media screen and (min-width: 47em) {
+  section.contenidos {
+>>>>>>> 78e0916b3c58ce6f59bba7d11a02e58d5dbc4ad6
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
