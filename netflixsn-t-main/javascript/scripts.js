@@ -4,10 +4,19 @@ $(document).ready(function(){
     /* console.log("Entré"); */ //Entró, xd.
     $("#buscador").keyup(function(){
         /* console.log($(this).val()); */ //Funciona correctamente, escribe en consola el value del campo buscar.
-        $("section.contenidos article,h2").hide()
-        $("section.contenidos h2.resultados").slideDown();
+        var value = $(this).val().toLowerCase();
+        if($(this).val().length > 0){
+            $("section.contenidos a,h2").hide();
+            $("section.contenidos h2.resultados").slideDown();
+            $("section.contenidos a").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            });
+         } else {
+            $("section.contenidos h2.resultados").fadeOut()
+            $("section.contenidos a,h2").show();
+            $("a.home").hide();
+         }
         /* $("p:contains("+$(this).val()+")"); */
-        $("a").filter("#"+$(this).val()).css('display','inline-block');
     });
     
     //FILTRO SERIES - NAV INDEX -- FUNCIONANDO
@@ -24,7 +33,7 @@ $(document).ready(function(){
             $("section.contenidos a.serie").css('display','none');
     });
 
-    //FILTRO PELICULAS & SERIES POR GENERO -- FUNCIONANDO, INTENTO DE FILTRAR POR CATEGORIA (PELICULA O SERIE) AL MISMO TIEMPO SIN EXITO.
+    //FILTRO PELICULAS & SERIES POR GENERO -- FUNCIONANDO, INTENTO DE FILTRAR POR CATEGORIA (PELICULA O SERIE) AL MISMO TIEMPO: SIN EXITO.
     $("#genero").change(function(){
         $("a.pelicula,a.serie").hide();
         switch($(this).val()){
