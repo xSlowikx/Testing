@@ -127,12 +127,13 @@ section.similares{
     align-items: center;
     /* background-color: bisque; */
 }
-section.similares h2{
-    font-size: 3em;
-    width: 100%;
+main h2{
+    margin: 1em auto;
+    box-sizing: border-box;
+    font-size: 4em;
+    max-width: 80%;
     text-align: center;
     word-wrap: break-word;
-    margin-bottom: 1em;
     text-shadow: 0.05em 0.05em blue;
 }
 section.similares a{
@@ -146,11 +147,13 @@ section.similares a{
     color: white;
 }
 section.similares a article img{
+    margin: auto;
     border-radius: 5%;
     max-width: 100%;
 }
 section.similares a article{
     margin-bottom: 1em;
+    padding: 0.5em;
 }
 section.similares a article p{
     font-size: 2em;
@@ -370,11 +373,11 @@ section.similares{
     align-items: baseline;
     /* background-color: bisque; */
 }
-section.similares h2{
-    width: 100%;
+/* main h2{
+    max-width: 100%;
     padding: 15px 0px 10px 40px;
     margin-bottom: 1%;
-}
+} */
 section.similares a{
     box-sizing: border-box;
     width: calc(33.3% - 3em);
@@ -389,6 +392,7 @@ section.similares a article p{
     text-shadow: none;
 }
 section.similares a article img{
+    margin: auto;
     border-radius: 5%;
     width: 100%;
 }

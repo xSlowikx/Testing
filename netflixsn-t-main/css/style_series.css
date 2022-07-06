@@ -122,12 +122,13 @@ section.similares{
     align-items: center;
     /* background-color: bisque; */
 }
-section.similares h2{
-    font-size: 3em;
-    width: 100%;
+main h2{
+    margin: 1em auto;
+    box-sizing: border-box;
+    font-size: 4em;
+    max-width: 80%;
     text-align: center;
     word-wrap: break-word;
-    margin-bottom: 1em;
     text-shadow: 0.05em 0.05em blue;
 }
 section.similares a{
@@ -143,39 +144,49 @@ section.similares a{
 section.similares a article img{
     border-radius: 5%;
     max-width: 100%;
+    margin: auto;
 }
 section.similares a article{
     margin-bottom: 1em;
+    padding: 0.5em;
 }
 section.similares a article p{
     font-size: 2em;
     text-shadow: 0.05em 0.05em red;
 }
+article.selectores #capitulos_temp1,#capitulos_temp2,#capitulos_temp3,#capitulos_temp4,#capitulos_temp5,#capitulos_temp6{
+    display: none;
+}
 article.selectores{
+    margin: auto;
+    /* background-color: red; */
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
     padding: 1em;
     text-align: center;
 }
 article.selectores label{
-    box-sizing: border-box;
-    width: calc(50% - 1em);
+    display: none;
+    /* box-sizing: border-box;
+    max-width: 100%;
     font-weight: bold;
     font-size: 2em;
-    margin: 0.5em auto;
+    margin: 0.5em auto; */
 }
 article.selectores select{
     box-sizing: border-box;
-    width: calc(50% - 1em);
+    width: 100%; 
+    margin: 0.5em auto;
     text-align: center;
+    word-wrap: break-word;
     border: none;
     text-decoration: none;
     background-color: rgb(15, 15, 15);
     color: white;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 2em;
 }
 /* Series */
 /* Game of Thrones */
@@ -335,6 +346,21 @@ main.fondo_serie .twd{
     section.descripcion article.info h5 a:hover{
         color: red;
     }
+    article.selectores{
+            /* margin: auto; */
+    margin: 0 0;
+    /* background-color: red; */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+    }
+    article.selectores select{
+        max-width: 100%;
+        margin: auto;
+    }
     section.similares{
         box-sizing: border-box;
         margin-top: 1em;
@@ -344,11 +370,11 @@ main.fondo_serie .twd{
         align-items: baseline;
         /* background-color: bisque; */
     }
-    section.similares h2{
+    /* main h2{
         width: 100%;
         padding: 15px 0px 10px 40px;
         margin-bottom: 1%;
-    }
+    } */
     section.similares a{
         box-sizing: border-box;
         width: calc(33.3% - 3em);

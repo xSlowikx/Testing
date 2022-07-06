@@ -39,7 +39,7 @@ header.index nav .fa-bars {
   padding: 0.2em;
 }
 header.index nav ul {
-  /* display: none; */
+  display: none;
   width: 100%;
   list-style: none;
   text-align: center;
