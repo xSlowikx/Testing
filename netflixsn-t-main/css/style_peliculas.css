@@ -1,0 +1,399 @@
+.pelicula{
+    background-color: black;
+}
+main.fondo_pelicula{
+    width: 80%;
+    margin: auto;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: rgb(92, 91, 91) 10px 10px 25px;
+    box-sizing: border-box;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    
+}
+main.fondo_pelicula .imagen a button{
+    max-width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    max-width: 6em;
+    max-height: 3em;
+    border: none;
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 0.2em;
+}
+main.fondo_pelicula .imagen button i{
+    /* margin: 6% 1%; */
+    box-sizing: border-box;
+    max-width: calc(20% - 1em);
+    align-self: center;
+    text-align: center;
+    margin: 0.2em;
+}
+main.fondo_pelicula .imagen button p{
+    /* margin: 5% 1%; */
+    max-width: calc(80% - 0em);
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+}
+section.descripcion,.similares{
+    width: 90%;
+    margin: auto;
+}
+section.descripcion{
+    box-sizing: border-box;
+    margin-top: 1em;
+    /* background-color: darkgrey; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+section.descripcion article.sinopsis{
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 0.5em;
+}
+section.descripcion article.sinopsis h3{
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    font-size: 45px;
+    padding: 0.2em;
+    box-shadow: -4px 4px 5px red;
+}
+section.descripcion article.sinopsis p{
+    font-size: 1.5em;
+}
+section.descripcion article.info{
+    /* background-color: blue; */
+    font-size: 1em;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 0.5em;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; */
+}
+section.descripcion article.info h4{
+    box-sizing: border-box;
+    max-width: 25%;
+    margin-bottom: 0.5em;
+    /* text-align: right; */
+}
+section.descripcion article.info h5{
+    max-width: 100%;
+    margin-bottom: 0.5em;
+}
+section.descripcion article.info h5 a{
+    text-decoration: none;
+    color: white;
+}
+section.descripcion article.video{
+    /* background-color: green; */
+    box-sizing: border-box;
+    padding: 0.6em;
+    /* display: flex;
+    justify-content: center; */
+}
+section.descripcion article.video iframe{
+    max-width: 100%;
+}
+/* section.descripcion article.info h5 a:hover{
+    color: red;
+} */
+section.similares{
+    box-sizing: border-box;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: bisque; */
+}
+section.similares h2{
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 1em;
+    text-shadow: 0.05em 0.05em blue;
+}
+section.similares a{
+    box-sizing: border-box;
+    width: calc(50% - 2em);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1em;
+    object-fit: cover;
+    text-decoration: none;
+    color: white;
+}
+section.similares a article img{
+    border-radius: 5%;
+    max-width: 100%;
+}
+section.similares a article{
+    margin-bottom: 1em;
+}
+section.similares a article p{
+    font-size: 2em;
+    text-shadow: 0.05em 0.05em red;
+}
+/* Peliculas */
+/* Carnage */
+main.fondo_pelicula .carnage{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/carnage_portada.jpg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Carnage */
+/* Uncharted */
+main.fondo_pelicula .uncharted{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_uncharted.jpg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Uncharted */
+
+
+/* Free Guy */
+main.fondo_pelicula .free_guy{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/free_guy_portada_16_11zon.jpg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Free Guy */
+/* No Way Home */
+main.fondo_pelicula .no_way_home{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_nowayhome.jpeg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* No Way Home */
+/* Guerra del Mañana */
+main.fondo_pelicula .guerra_manana{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_manana.jpg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Guerra del Mañana */
+/* Sonic 2 */
+main.fondo_pelicula .sonic2{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_sonic2.jpg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Sonic 2 */
+/* Pearl Harbor */
+main.fondo_pelicula .pearl_harbor{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_harbor.jpg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Pearl Harbor */
+/* Batman */
+main.fondo_pelicula .dark_knight{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_darknight.jpg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Batman */
+/* Troya */
+main.fondo_pelicula .troya{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_troya.jpeg);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Troya */
+/* Transformers */
+main.fondo_pelicula .transformers{
+    background: linear-gradient(to top,rgb(15, 15, 15) 1%,rgba(115, 115, 115, 0)), url(../img/portada_transformers.jpg);
+    width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+/* Transformers */
+@media screen and (min-width: 47em){
+    main.fondo_pelicula .imagen{
+        height: 400px;
+    }
+    section.similares a{
+        width: calc(33.3% - 2em);
+    }
+    section.descripcion article.info{
+        margin: auto;
+        font-size: 1.5em;
+    }
+    section.descripcion article.video{
+        margin: auto;
+    }
+}
+@media screen and (min-width: 60em){
+/* Peliculas */
+main.fondo_pelicula .imagen{
+    height: 500px;
+}
+.pelicula{
+    background-color: black;
+}
+main.fondo_pelicula{
+    width: 55%;
+}
+section.descripcion article.info{
+    margin: auto;
+    font-size: 1.5em;
+}
+section.descripcion article.video{
+    margin: auto;
+}
+main.fondo_pelicula .imagen button i{
+    width: calc(20% - 1em);
+}
+main.fondo_pelicula .imagen button p{
+    width: calc(80% - 0em);
+    text-align: center;
+    font-weight: bold;
+}
+main.fondo_pelicula .imagen button:hover{
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+section.descripcion article{
+    width: calc(50% - 2em);
+    margin-bottom: 0.3em;
+}
+section.descripcion article.video{
+    /* background-color: green; */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+section.descripcion article.sinopsis{
+    /* background-color: red; */
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 1%;
+}
+section.descripcion article.sinopsis h3{
+    margin-bottom: 1em;
+    font-size: 35px;
+    padding: 0.3em;
+    box-shadow: -4px 4px 5px red;
+}
+section.descripcion article.info{
+    /* background-color: blue; */
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+section.descripcion article.info h4{
+    box-sizing: border-box;
+    width: 25%;
+    text-align: right;
+}
+section.descripcion article.info h5{
+    width: 100%;
+}
+section.descripcion article.info h5 a{
+    text-decoration: none;
+    color: white;
+}
+section.descripcion article.info h5 a:hover{
+    color: red;
+}
+section.similares{
+    box-sizing: border-box;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    /* background-color: bisque; */
+}
+section.similares h2{
+    width: 100%;
+    padding: 15px 0px 10px 40px;
+    margin-bottom: 1%;
+}
+section.similares a{
+    box-sizing: border-box;
+    width: calc(33.3% - 3em);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2%;
+    object-fit: cover;
+    text-decoration: none;
+    color: white;
+}
+section.similares a article p{
+    text-shadow: none;
+}
+section.similares a article img{
+    border-radius: 5%;
+    width: 100%;
+}
+section.similares a article:hover{
+    color:red;
+    cursor: pointer;
+}
+}
