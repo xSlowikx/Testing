@@ -12,8 +12,9 @@ body {
 /* General */
 /* Header */
 header.index nav {
+  box-sizing: border-box;
   width: 90%;
-  margin: 3em auto;
+  margin: 2em auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -23,7 +24,7 @@ header.index nav {
 header.index nav a {
   box-sizing: border-box;
   padding: 0.5em;
-  width: calc(32% - 0px);
+  width: calc(33.3% - 0em);
   text-align: center;
 }
 header.index nav a img {

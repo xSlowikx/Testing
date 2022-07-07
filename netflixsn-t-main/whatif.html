@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style_series.css">
+    <link rel="stylesheet" href="javascript/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="javascript/slick-1.8.1/slick/slick.css">
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="javascript/scripts.js"></script>
     <title>NETFLIXSN'T</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,6 +19,7 @@
     <header class="index">
       <nav>
         <a href="index.html"><img src="img/logo_principal.png" alt="logo"></a>
+        <a href="#" class="burguer_icon"><i class="fa-solid fa-bars"></i></a>
          <ul>
              <a href="index.html" class="links_nav"><li>Home</li></a>
              <a href="filter_series.html" class="links_nav"><li>Series</li></a>
@@ -41,27 +47,40 @@
           <iframe width="400" height="350" src="https://www.youtube.com/embed/TV3s2STA7NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <article class="selectores">
-            <label for="temporada">Temporada: </label>
-            <select name="temporada" id="temporada">
-                <option value="temporada1">Temporada 1</option>
-                <option value="temporada2">Temporada 2</option>
-            </select>
-            <label for="capitulo">Capitulo: </label>
-            <select name="capitulo" id="capitulo">
-                <option value="capitulo1">Capitulo 1</option>
-                <option value="capitulo2">Capitulo 2</option>
-                <option value="capitulo3">Capitulo 3</option>
-                <option value="capitulo4">Capitulo 4</option>
-                <option value="capitulo5">Capitulo 5</option>
-                <option value="capitulo6">Capitulo 6</option>
-                <option value="capitulo7">Capitulo 7</option>
-                <option value="capitulo8">Capitulo 8</option>
-                <option value="capitulo9">Capitulo 9</option>
-            </select>
+          <label for="temporada">Temporada: </label>
+          <select name="temporada" id="temporada">
+            <option value="0">Seleccione una temporada</option>
+            <option value="1">Temporada 1</option>
+            <option value="2">Temporada 2</option>
+          </select>
+          <label for="capitulo">Capitulo: </label>
+          <select name="capitulo" id="capitulos_temp1">
+            <option value="0">Seleccione un capitulo</option>
+            <option value="1">Capitulo 1</option>
+            <option value="2">Capitulo 2</option>
+            <option value="3">Capitulo 3</option>
+            <option value="4">Capitulo 4</option>
+            <option value="5">Capitulo 5</option>
+            <option value="6">Capitulo 6</option>
+            <option value="7">Capitulo 7</option>
+            <option value="8">Capitulo 8</option>
+          </select>
+          <select name="capitulo" id="capitulos_temp2">
+            <option value="1">Capitulo 1</option>
+            <option value="2">Capitulo 2</option>
+            <option value="3">Capitulo 3</option>
+            <option value="4">Capitulo 4</option>
+            <option value="5">Capitulo 5</option>
+            <option value="6">Capitulo 6</option>
+            <option value="7">Capitulo 7</option>
+            <option value="8">Capitulo 8</option>
+            <option value="9">Capitulo 9</option>
+            <option value="10">Capitulo 10</option>
+          </select>
         </article>
       </section>
+      <h2>Mas títulos similares</h2>
       <section class="similares">
-        <h2>Mas títulos similares</h2>
         <a href="twd.html">
           <article>
             <img src="img/twd.jpg" alt="twd" />

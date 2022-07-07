@@ -1,15 +1,10 @@
 $(document).ready(function () {
   //MENU HAMBURGUESA
   $(".burguer_icon").click(function () {
-    if ($("header.index ul").filter("escondido")) {
-      $("header.index ul").addClass("desplegado");
-      $("header.index ul").removeClass("escondido");
+    if ($("header.index ul").is(":visible")){
+      $("header.index ul").slideUp();
+    } else {
       $("header.index ul").slideDown();
-    } else if($("header.index ul").filter("desplegado")){
-      $("header.index ul").addClass("escondido");
-      $("header.index ul").removeClass("desplegado");
-      $("header.index ul").fadeOut();
-      
     }
   });
   /* console.log("Entré"); */ //Entró, xd.
@@ -38,7 +33,7 @@ $(document).ready(function () {
   });
 
   //FILTRO PELICULAS - NAV INDEX -- FUNCIONANDO
-  $("a.peliculas #genero").click(function () {
+  $("a.peliculas").click(function(){
     console.log("Entre");
     $("section.contenidos a.pelicula").css("display", "inline-block");
     $("section.contenidos a.serie").css("display", "none");
