@@ -93,6 +93,7 @@ header.index nav ul .peliculas{
     border: 1px solid darkgray;
 } */
 /* Header */
+/* Index */
 main.fondo {
   background-color: rgb(0, 0, 0);
   padding: 1em;
@@ -200,8 +201,8 @@ section.contenidos a {
   margin-bottom: 0.5em;
   max-height: 300px;
 }
-section.contenidos .home{
-    display: none;
+section.contenidos .home {
+  display: none;
 }
 .footer_index {
   background-color: darkgray;
@@ -245,7 +246,120 @@ p.numero_servicio:hover {
   color: black;
   cursor: pointer;
 }
+/* Index */
+/* Perfil */
+.perfil {
+  color: white;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  width: 90%;
+  margin: auto;
+  /* align-content: center; */
+}
+.perfil article {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0.5em;
+}
+article.fotoperfil {
+  text-align: center;
+}
+article.fotoperfil img {
+  max-width: 100%;
+  border-radius: 20%;
+  margin-bottom: 3em;
+}
+article.fotoperfil h2 {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0.05em 0.05em red;
+}
+article.columna0{
+  text-align: center;
+}
+article.columna0 input,label {
+  text-align: center;
+  padding: 0.5em;
+  width: 70%;
+  font-size: 1.5em;
+}
+article.columna1{
+  font-size: 2em;
+}
+article.columna1 input,label,p{
+  font-size: 1em;
+}
+article.columna1 p{
+  text-align: center;
+  margin-bottom: 1em;
+}
+#num_tarjeta{
+  box-sizing: border-box;
+  width: 70%;
+  padding: 0.2em;
+}
+#num_codigo {
+  box-sizing: border-box;
+  width: 15%;
+  padding: 0.2em;
+  margin-bottom: 1em;;
+}
+#cupon{
+  margin-bottom: 1em;
+}
+#pagofacil {
+  margin-left: 1em;
+}
+#rapipago {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+.botones {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+  box-sizing: border-box;
+  width: 50%;
+  margin: auto;
+  /* padding: 4em 0em 0em 0em; */
+}
+.botones a {
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: auto;
+  padding: 0.5em;
+}
+.botones a input {
+  border-radius: 5%;
+  box-sizing: border-box;
+  font-size: 1.3em;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  /* height: 2.5em; */
+  padding: 1em;
+}
+.verde {
+  background-color: greenyellow;
+}
+.rojo {
+  color: white;
+  background-color: #e50914;
+}
+#mensajes_error {
+  background-color: #737373;
+  height: 1em;
+  color: red;
+  text-align: center;
+  font-size: 2em;
+  width: 80%;
+  margin: 1em auto;
+}
+/* Perfil */
 @media screen and (min-width: 47em) {
+  /* Index */
   section.contenidos {
     box-sizing: border-box;
     display: flex;
@@ -264,6 +378,25 @@ p.numero_servicio:hover {
     text-decoration: none;
     color: white;
   }
+  /* Index */
+  /* Perfil */
+  article.fotoperfil img{
+    max-width: 50%;
+  }
+  .columna0 input {
+    width: 75%;
+    font-size: 2em;
+  }
+  .columna1{
+    width: 75%;
+    margin: auto;
+  }
+  #mensajes_error{
+    width: 75%;
+    margin: 1em auto;
+    height: 1em;
+  }
+  /* Perfil */
 }
 @media screen and (min-width: 60em) {
   header.index {
@@ -607,100 +740,50 @@ p.numero_servicio:hover {
   }
   /* Password */
   /* Perfil */
-  .perfil {
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    align-content: center;
+  section.perfil{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .perfil article {
-    box-sizing: content-box;
-    width: calc(33.3% - 125px);
-    padding: 3%;
-    font-size: 150%;
+  section.perfil article.fotoperfil,article.columna0 {
+    padding: 1em;
   }
-  .fotoperfil {
-    text-align: center;
+  section.perfil .fotoperfil{
+    align-self: center;
   }
   .fotoperfil img {
-    width: 90%;
-    border-radius: 20%;
-    margin-bottom: 10%;
+    max-width: 100%;
   }
-  .fotoperfil p {
-    color: white;
+  article.columna1{
+    padding: 0.5em;
   }
-  .perfil label {
-    color: white;
+  article.columna1 form{
+    width: 100%;
+    text-align: center;
   }
-  .perfil input {
-    margin: 4% 0% 4% 0%;
-    height: 5%;
+  article.columna1 form #num_tarjeta,#num_codigo{
+    font-size: 15px;
   }
-  .columna0 input {
-    width: 75%;
-    padding-left: 5%;
+  article.columna1 form #num_tarjeta{
+    width: 80%;
   }
-  .columna1 input {
-    margin-left: 7%;
-  }
-  .columna2 {
-    margin-left: 18%;
-  }
-  #num {
-    margin-left: 18%;
-  }
-  #pagofacil {
-    margin-left: 18%;
-  }
-  #rapipago {
-    margin-left: 18%;
-  }
-  .tresdigitos {
-    width: 17%;
-  }
-  .botones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  article.columna1 form #num_codigo{
     width: 30%;
-    margin: auto;
-    padding: 1%;
+  }
+  section.botones {
+    padding: 1em;
+    width: 90%;
   }
   .botones a {
-    box-sizing: content-box;
-    width: calc(50% - 20px);
-    text-align: center;
-    padding: 1%;
-    border-radius: 5%;
+    box-sizing: border-box;
+    max-width: 50%;
+    margin: auto;
   }
   .botones a input {
-    border-radius: 5%;
-    box-sizing: content-box;
-    font-size: 20px;
-    border: none;
-    font-weight: bold;
+    box-sizing: border-box;
     width: 100%;
-    height: 50px;
-    padding: 1%;
-  }
-  .verde {
-    background-color: greenyellow;
-  }
-  .verde:hover {
-    background-color: green;
-    cursor: pointer;
-  }
-  .rojo {
-    background-color: #e50914;
-  }
-  .rojo:hover {
-    background-color: rgb(119, 0, 0);
-    cursor: pointer;
-  }
+    margin: auto;
+    font-size: 2em;
+  }  
   /* Perfil */
   /* Registro */
   body.background_registro {
