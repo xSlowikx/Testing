@@ -350,14 +350,108 @@ article.columna1 p{
 }
 #mensajes_error {
   background-color: #737373;
-  height: 1em;
-  color: red;
+  color: black;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   width: 80%;
   margin: 1em auto;
+  padding: 1em;
+}
+#mensajes_error p{
+  display: block;
+  margin-bottom: 0.3em;
 }
 /* Perfil */
+/* Registro */
+body.background_registro {
+  background-image: url(../img/loginsSreen.jpg);
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+header.logo_registro {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1em;
+}
+.logo_registro img{
+  max-width: 100%;
+}
+section.primer_registro {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+section.primer_registro h1{
+  display: none;
+}
+section.primer_registro span {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+section.primer_registro span h2 {
+  width: 60%;
+  margin: auto;
+  font-size: 2em; 
+  text-align: center;
+  padding: 1em;
+  border: 0.5em dotted white;
+}
+section.primer_registro article {
+  width: 100%; 
+}
+.columna_datos {
+  padding: 0.5em;
+  text-align: center;
+  font-size: 2em;
+}
+.columna_datos label,
+input {
+  display: block;
+  margin: 0.1em auto;
+  text-align: center;
+}
+.columna_datos input{
+  width: 90%;
+  padding: 0.2em;
+}
+.columna_metodo {
+  padding: 1em;
+  font-size: 2em;
+}
+.columna_metodo p {
+  font-size: 1em; 
+  margin-bottom: 1em;
+  width: 80%;
+  text-align: center;
+  margin: 1em auto;
+  font-weight: bold;
+}
+.columna_metodo label,
+input {
+  display: block;
+  font-size: 1em;
+}
+.columna_metodo input[type=radio]{
+  display: inline;
+}
+#input_num{
+  width: 90%;
+  text-align: center;
+  padding: 0.2em;
+}
+#input_cod{
+  width: 25%;
+  text-align: center;
+  padding: 0.2em;
+}
+/* Registro */
 @media screen and (min-width: 47em) {
   /* Index */
   section.contenidos {
@@ -393,10 +487,38 @@ article.columna1 p{
   }
   #mensajes_error{
     width: 75%;
-    margin: 1em auto;
-    height: 1em;
+  }
+  #mensajes_error p{
+    font-size: 1.5em;
+    color: black;
   }
   /* Perfil */
+  /* Registro */
+  header{
+    margin: auto;
+    text-align: center;
+  }
+  section.primer_registro {
+    width: 70%; 
+  }
+  section.primer_registro span h2 {
+    font-size: 2em; 
+  }
+  section.primer_registro article {
+    width: 100%; 
+  }
+  .columna_metodo p {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .fondo_registro .botones{
+    padding: 0em;
+    width: 60%;
+  }
+  .columna_metodo input[type=radio]{
+    margin-bottom: 1em;
+  }
+  /* Registro */
 }
 @media screen and (min-width: 60em) {
   header.index {
@@ -786,69 +908,50 @@ article.columna1 p{
   }  
   /* Perfil */
   /* Registro */
-  body.background_registro {
-    background-image: url(../img/loginsSreen.jpg);
-    background-color: rgba(0, 0, 0, 0.55);
-    background-blend-mode: soft-light;
-  }
-  header.logo_registro {
-    padding: 1%;
-    text-align: center;
-  }
   section.primer_registro {
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 60%;
-    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
   }
-  section.primer_registro span {
+  section.primer_registro h1{
+    display: block;
+    grid-row: 1/2;
+    grid-column: 1/3;
     width: 100%;
-    margin: auto;
-    margin-bottom: 1%;
-  }
-  section.primer_registro span h2 {
-    width: 50%;
-    margin: auto;
-    font-size: 40px;
+    font-size: 7em;
     text-align: center;
-    padding: 1%;
-    border: 5px dotted white;
+    margin-bottom: 1em;
+    text-shadow: 0.08em 0.03em red;
+    border: 0.1em dotted white;
+  }
+  section.primer_registro span{
+    display: none;
   }
   section.primer_registro article {
-    width: calc(50% - 100px);
-    text-align: left;
+    box-sizing: border-box;
+    grid-row: 2/3;
   }
-  .columna_datos {
-    padding: 3%;
-    text-align: left;
+  .columna_datos{
+    grid-column: 1/2;
+    font-size: 2em;
   }
-  .columna_datos label,
-  input {
-    font-size: 15px;
-    margin: 3%;
+  .columna_metodo{
+    grid-column: 2/3;
+    font-size: 1.5em;
   }
-  .columna_metodo {
-    padding: 3%;
-    text-align: left;
+  section.botones a input{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.3em;
+    word-wrap: break-word;
   }
-  .columna_metodo label,
-  input {
-    font-size: 20px;
-  }
-  .columna_metodo p {
-    font-size: 25px;
-    margin-bottom: 1%;
-  }
-  .registro article {
-    width: 40%;
-    padding: 4%;
-    font-size: 140%;
-  }
-  .registro input {
-    margin: 3% 0% 3% 0%;
-    height: 6%;
+  section.botones a{
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 1em;
+    /* background-color: #737373; */
   }
   /*Registro*/
 }

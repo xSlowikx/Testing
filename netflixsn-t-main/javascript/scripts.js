@@ -1,4 +1,142 @@
 $(document).ready(function () {
+
+  //LOCALSTORAGE DEL INPUT DE LOGIN
+  $("input#username_login").keyup(function(){
+    var userNameStoraged = $("#username_login").val();
+    localStorage.setItem("Username",userNameStoraged);
+  });
+
+
+  var regexText = /^[a-zA-Z\s]+$/;
+  var regexEmail = /^[a-zA-Z0-9._.-]+\@[a-zA-Z0-9._.-]+\.[a-zA-Z]+$/
+  var regexUsername = /^[a-zA-Z0-9]+$/;
+  var regexPassword = /^(?=\w*\d{2})(?=\w*[a-zA-Z])\S{8}$/;
+  var regexCardKey = /^[1-9]{3}$/;
+  var regexCardNumber = /^[0-9]{16,19}$/;
+  var error = false;
+  
+  /* if(($("#nombre").val().length < 1) && 
+  ($("#nombre").val().length < 1) && 
+  ($("#nombre").val().length < 1) && 
+  ($("#nombre").val().length < 1) && 
+  ($("#nombre").val().length < 1) && 
+  ($("#nombre").val().length < 1) && 
+  ($("#nombre").val().length < 1) && 
+  ($("#nombre").val().length < 1)){
+
+    $("#input_submit").css('background-color','grey');
+  } else{
+    $("#input_submit").css('background-color','green');
+  } */
+
+  $("#submit_valido").click(function(e){
+    var mensajeError = "";
+    /* $("#mensajes_error").empty(); */
+    //Validacion de input "Nombre"
+    if(regexText.test($("input#nombre").val())){
+      console.log("El nombre esta bien");
+    } else {
+      console.log("El nombre esta mal");
+      error = true;
+      mensajeError += "<p>* El nombre unicamente acepta letras</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    }
+
+    //Validacion de input "Apellido"
+    if(regexText.test($("input#apellido").val())){
+      console.log("El apellido esta bien");
+    } else {
+      console.log("El apellido esta mal");
+      error = true;
+      mensajeError += "<p>* El apellido unicamente acepta letras</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    }
+
+    //Validacion de input "Mail"
+    if(regexEmail.test($("input#mail").val())){
+      console.log("El mail esta bien");
+    } else {
+      console.log("El mail esta mal");
+      error = true;
+      mensajeError += "<p>* Formato de eMail incorrecto</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    }
+
+    //Validacion de input "Usuario"
+    if(regexUsername.test($("input#usuario").val())){
+      console.log("El usuario esta bien");
+    } else {
+      console.log("El usuario esta mal");
+      error = true;
+      mensajeError += "<p>* Nombre de usuario solo acepta letras y numeros</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    }
+
+    //Validacion input "Contraseña"
+    if(regexPassword.test($("input#pass0").val())){
+      console.log("La contraseña esta bien");
+    } else {
+      console.log("La contraseña esta mal");
+      error = true;
+      mensajeError += "<p>* 8 caracteres exactos para la contraseña</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    }
+
+    //Validacion input "Repetir contraseña"
+    if($("input#pass0").val() == $("input#pass1").val()){
+      console.log("Las contraseñas coinciden");
+    } else {
+      console.log("Las contraseñas no coinciden");
+      error = true;
+      mensajeError += "<p>* Las contraseñas no coinciden</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    };
+
+    //Validacion codigo de tarjeta
+    if(regexCardKey.test($("input#input_cod").val())){
+      console.log("El codigo de la tarjeta esta bien");
+    } else if($("input#input_cod").val() == "000"){
+      console.log("El codigo de la tarjeta esta mal");
+      error = true;
+      mensajeError += "<p>* El codigo de la tarjeta NO PUEDE SER 000</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    } else {
+      console.log("El codigo de la tarjeta esta mal");
+      error = true;
+      mensajeError += "<p>* El codigo de la tarjeta debe ser de 3 digitos y no contener al cero</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    }
+
+    //Validacion numero de la tarjeta
+    if(regexCardNumber.test($("input#input_num").val())){
+      console.log("El numero de la tarjeta está bien");
+    } else {
+      console.log("El numero de la tarjeta esta mal");
+      error = true;
+      mensajeError += "<p>* El numero de la tarjeta es incorrecto</p>";
+      /* $("#mensajes_error").empty(); */
+      /* $("#mensajes_error").append(mensajeError); */
+    }
+
+    if(error){
+      e.preventDefault();
+      $("#mensajes_error").empty();
+      $("#mensajes_error").append(mensajeError);
+    } else{
+      location.href = "login.html";
+    }
+  });
+
+
+
   //MENU HAMBURGUESA
   $(".burguer_icon").click(function () {
     if ($("header.index ul").is(":visible")){
